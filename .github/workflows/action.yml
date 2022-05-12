@@ -9,7 +9,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Hello world action step
-        uses: lowlighter/metrics@latest
+        uses: actions/checkout@v3
         id: hello
         with:
           who-to-greet: 'Rahul'
