@@ -9,9 +9,14 @@ jobs:
       # you must check out the repository
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Hello world action step
-        uses: ./script.ps1
-        id: hello
-        with:
-          who-to-greet: 'Rahul'
+      - name: Hello world action 
+        id: script
+        shell: powershell
+        run: |-
+          dir        
+           ./.github/script.ps1
+           
+#         write-outpt "Hello Script sucess"
+        
+       
      
